@@ -1,8 +1,6 @@
 package com.campusdual.backendfullstack.model;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
-import java.util.Date;
 
 @Entity
 @Table(name="CONTACTS")
@@ -12,13 +10,13 @@ public class Contacts {
     private int ID;
 
     @Column
-    private String first_name;
+    private String name;
 
     @Column
-    private String middle_name;
+    private String surname;
 
     @Column
-    private String last_name;
+    private String lastname;
 
     @Column
     private int tel;
@@ -34,28 +32,28 @@ public class Contacts {
         this.ID = ID;
     }
 
-    public String getFirst_name() {
-        return first_name;
+    public String getName() {
+        return name;
     }
 
-    public void setFirst_name(String first_name) {
-        this.first_name = first_name;
+    public void setName(String first_name) {
+        this.name = first_name;
     }
 
-    public String getMiddle_name() {
-        return middle_name;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setMiddle_name(String middle_name) {
-        this.middle_name = middle_name;
+    public void setSurname(String middle_name) {
+        this.surname = middle_name;
     }
 
-    public String getLast_name() {
-        return last_name;
+    public String getLastname() {
+        return lastname;
     }
 
-    public void setLast_name(String last_name) {
-        this.last_name = last_name;
+    public void setLastname(String last_name) {
+        this.lastname = last_name;
     }
 
     public int getTel() {
